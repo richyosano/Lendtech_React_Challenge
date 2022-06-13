@@ -1,0 +1,34 @@
+
+{
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"requireConfigFile": false,
+        "ecmaVersion": "latest"
+	},
+	"plugins": ["@babel", "react"],
+	"extends": ["eslint:recommended", "plugin:react/recommended"],
+	"rules": {
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "warn",
+		"quotes": ["error", "single", { "avoidEscape": true }],
+		"semi": 1,
+		"no-invalid-this": 2,
+		"no-unused-expressions": 1,
+        "no-unused-vars":"warn",
+        "no-debugger":"warn",
+        "no-mixed-spaces-and-tabs":"off",
+		"valid-typeof": 1,
+		"object-curly-spacing": [
+			1,
+			"always",
+			{
+				"objectsInObjects": false,
+				"arraysInObjects": false
+			}
+		]
+	}
+}
+
